@@ -57,7 +57,7 @@
 			</h:panelGrid>
 
 			<div class="buttons">
-				<h:commandLink value="Save" action='#{speakerBean.update}' styleClass="btn btn-primary"/>
+				<h:commandLink id="save_button" value="Save" action='#{speakerBean.update}' styleClass="btn btn-primary"/>
 				<c:choose>
 					<c:when test='#{!empty speakerBean.id}'>
 						<h:link value="Cancel" outcome="view" styleClass="btn btn-primary">
